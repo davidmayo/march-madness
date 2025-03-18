@@ -17,19 +17,19 @@
             "kenpom_name": "Alabama St."
         },
         {
-            "name": "Creighton",
+            "name": "Louisville",
             "seed": 8,
             "index": 2,
             "region": "South",
-            "kenpom": 18.7,
+            "kenpom": 22.64,
             "kenpom_name": null
         },
         {
-            "name": "Louisville",
+            "name": "Creighton",
             "seed": 9,
             "index": 3,
             "region": "South",
-            "kenpom": 22.64,
+            "kenpom": 18.7,
             "kenpom_name": null
         },
         {
@@ -481,21 +481,22 @@
             "kenpom_name": null
         },
         {
-            "name": "Utah St.",
+            "name": "UCLA",
             "seed": 7,
             "index": 60,
-            "region": "Midwest",
-            "kenpom": 15.22,
-            "kenpom_name": null
-        },
-        {
-            "name": "UCLA",
-            "seed": 10,
-            "index": 61,
             "region": "Midwest",
             "kenpom": 21.76,
             "kenpom_name": null
         },
+        {
+            "name": "Utah St.",
+            "seed": 10,
+            "index": 61,
+            "region": "Midwest",
+            "kenpom": 15.22,
+            "kenpom_name": null
+        },
+
         {
             "name": "Tennessee",
             "seed": 2,

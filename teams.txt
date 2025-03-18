@@ -1,7 +1,7 @@
 Auburn
 ALST/SFU
-Creighton
-Louisville
+Creighton ***
+Louisville ***
 Michigan
 UC San Diego
 Texas A&M
@@ -58,7 +58,7 @@ Illinois
 TEX/XAV
 Kentucky
 Troy
-Utah St.
-UCLA
+Utah St. ***
+UCLA ***
 Tennessee
 Wofford

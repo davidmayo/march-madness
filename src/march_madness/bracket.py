@@ -70,6 +70,46 @@ class Bracket(pydantic.BaseModel):
         round_of = self.current_round_of()
         return [game for game in self.undecided_games() if game.round_of == round_of]
 
+    def advance_winner(self, game: Game, winner_index: int):
+        # Set the winner
+        self.games[game.game_id].winner_index = winner_index
+
+        # Advance the winner
+
+        round_start_index = -1
+
+        if game.round_of == 64:
+            round_start_index = 0
+            next_round_start_index = 32
+        elif game.round_of == 32:
+            round_start_index = 32
+            next_round_start_index = 48
+        elif game.round_of == 16:
+            round_start_index = 48
+            next_round_start_index = 56
+        elif game.round_of == 8:
+            round_start_index = 56
+            next_round_start_index = 60
+        elif game.round_of == 4:
+            round_start_index = 60
+            next_round_start_index = 62
+        elif game.round_of == 2:
+            return
+        elif game.round_of == 1:
+            return
+
+        within_round_index = game.game_id - round_start_index
+        within_next_round_index = within_round_index // 2
+        is_next_round_team1 = within_round_index % 2 == 0
+        next_game_id = next_round_start_index + within_next_round_index
+        if is_next_round_team1:
+            self.games[next_game_id].team1_index = winner_index
+        else:
+            self.games[next_game_id].team2_index = winner_index
+
+    def clone(self) -> "Bracket":
+        return Bracket.model_validate_json(self.model_dump_json())
+
 
 if __name__ == "__main__":
     bracket = Bracket(
