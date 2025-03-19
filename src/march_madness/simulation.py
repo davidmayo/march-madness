@@ -4,7 +4,8 @@ from typing import Callable
 from march_madness import get_bracket, Bracket, Game, Team
 
 rand = random.Random(40351)
-
+AVERAGE_TEMPO = 70
+"""Average tempo (possessions per 40 minutes) for college basketball."""
 
 def random_winner(game: Game, bracket: Bracket) -> int:
     return rand.choice([game.team1_index, game.team2_index])
@@ -58,12 +59,14 @@ def normal_distribution(
 def elo_style(
     game: Game,
     bracket: Bracket,
-    scale_factor: float = 20,
+    scale_factor: float = 13.7420,  # Empirically determined in `data/blah.py`
 ) -> int:
     team1: Team = bracket.teams[game.team1_index]
     team2: Team = bracket.teams[game.team2_index]
 
-    team1_win_prob = 1 / (1 + 10 ** ((team2.kenpom - team1.kenpom) / scale_factor))
+    team2_scoring_margin = (team2.kenpom - team1.kenpom) * (AVERAGE_TEMPO / 100)
+
+    team1_win_prob = 1 / (1 + 10 ** (team2_scoring_margin / scale_factor))
 
     # print(f"DEBUG: {team1_win_prob*100:.2f}% that ({team1.seed}) {team1.name} [kenpom={team1.kenpom}] beats ({team2.seed}) {team2.name} [kenpom={team2.kenpom}]")
     if rand.random() < team1_win_prob:
