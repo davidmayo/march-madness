@@ -9,7 +9,7 @@ environ["TK_LIBRARY"] = str(Path(base_prefix) / "tcl" / "tk8.6")
 
 import matplotlib.pyplot as plt
 
-from march_madness import get_bracket, Bracket, Game, Team
+from march_madness import get_bracket, Bracket
 
 bracket = get_bracket()
 

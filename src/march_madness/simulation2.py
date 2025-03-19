@@ -1,8 +1,8 @@
 from collections import Counter
 from typing import Callable
 
-from march_madness import Bracket, Game, Team, get_bracket
-from march_madness.simulation import normal_distribution, elo_style, sim
+from march_madness import Bracket, Game, get_bracket
+from march_madness.simulation import elo_style, sim
 
 
 class Simulation:
@@ -23,12 +23,12 @@ class Simulation:
         def name(index: int) -> str:
             team = self.bracket.teams[index]
             return f"{team.name}"
+
         return [
             (name(index), count / self.sim_count)
-            for index, count
-            in self._results[game_id].most_common()
+            for index, count in self._results[game_id].most_common()
         ]
-    
+
     def pretty_results(self, game_id: int, cutoff: int | None = None) -> str:
         results = self.results(game_id)
         # if len(results) == 1:
@@ -39,22 +39,22 @@ class Simulation:
         for result in results[:cutoff]:
             rv += f"{result[0]}: {result[1] * 100:.1f}%\n"
         if len(results) > cutoff:
-            rv += f"<others>: {sum(result[1] for result in results[cutoff:]) * 100:.1f}%"
+            rv += (
+                f"<others>: {sum(result[1] for result in results[cutoff:]) * 100:.1f}%"
+            )
         return rv.strip()
-    
+
     def most_likely_pretty_result(self, game_id: int) -> str:
         return self.pretty_results(game_id).splitlines()[0]
 
     def _do_sim(self) -> None:
-        self._results = {
-            game.game_id: Counter()
-            for game
-            in self.bracket.games
-        }
+        self._results = {game.game_id: Counter() for game in self.bracket.games}
 
         for index in range(self.sim_count):
             print(f"Simulating {index + 1}/{self.sim_count}")
-            simmed_bracket = sim(bracket=self.bracket, sim_game_function=self.sim_game_function)
+            simmed_bracket = sim(
+                bracket=self.bracket, sim_game_function=self.sim_game_function
+            )
             for game in simmed_bracket.games:
                 if game.winner_index is not None:
                     self._results[game.game_id][game.winner_index] += 1
@@ -63,7 +63,7 @@ class Simulation:
 if __name__ == "__main__":
     simulation = Simulation(bracket=get_bracket(), sim_count=100)
     from rich.pretty import pprint
-    
+
     for game_id in range(63):
         print(f"Game {game_id}:")
         pprint(simulation.results(game_id))

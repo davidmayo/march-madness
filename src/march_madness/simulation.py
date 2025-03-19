@@ -7,6 +7,7 @@ rand = random.Random(40351)
 AVERAGE_TEMPO = 70
 """Average tempo (possessions per 40 minutes) for college basketball."""
 
+
 def random_winner(game: Game, bracket: Bracket) -> int:
     return rand.choice([game.team1_index, game.team2_index])
 
