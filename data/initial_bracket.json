@@ -6,15 +6,17 @@
             "index": 0,
             "region": "South",
             "kenpom": 35.05,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "AUB"
         },
         {
-            "name": "ALST/SFU",
+            "name": "Alabama St.",
             "seed": 16,
             "index": 1,
             "region": "South",
             "kenpom": -9.24,
-            "kenpom_name": "Alabama St."
+            "kenpom_name": "Alabama St.",
+            "espn_name": "ALST"
         },
         {
             "name": "Louisville",
@@ -22,7 +24,8 @@
             "index": 2,
             "region": "South",
             "kenpom": 22.64,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "LOU"
         },
         {
             "name": "Creighton",
@@ -30,7 +33,8 @@
             "index": 3,
             "region": "South",
             "kenpom": 18.7,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "CREI"
         },
         {
             "name": "Michigan",
@@ -38,7 +42,8 @@
             "index": 4,
             "region": "South",
             "kenpom": 22.28,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "MICH"
         },
         {
             "name": "UC San Diego",
@@ -46,7 +51,8 @@
             "index": 5,
             "region": "South",
             "kenpom": 18.77,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "UCSD"
         },
         {
             "name": "Texas A&M",
@@ -54,7 +60,8 @@
             "index": 6,
             "region": "South",
             "kenpom": 24.08,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "TA&M"
         },
         {
             "name": "Yale",
@@ -62,7 +69,8 @@
             "index": 7,
             "region": "South",
             "kenpom": 11.04,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "YALE"
         },
         {
             "name": "Ole Miss",
@@ -70,15 +78,17 @@
             "index": 8,
             "region": "South",
             "kenpom": 22.09,
-            "kenpom_name": "Mississippi"
+            "kenpom_name": "Mississippi",
+            "espn_name": "MISS"
         },
         {
-            "name": "SDSU/UNC",
+            "name": "North Carolina",
             "seed": 11,
             "index": 9,
             "region": "South",
-            "kenpom": 16.28,
-            "kenpom_name": "San Diego St."
+            "kenpom": 20.62,
+            "kenpom_name": "North Carolina",
+            "espn_name": "UNC"
         },
         {
             "name": "Iowa St.",
@@ -86,7 +96,8 @@
             "index": 10,
             "region": "South",
             "kenpom": 26.99,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "ISU"
         },
         {
             "name": "Lipscomb",
@@ -94,7 +105,8 @@
             "index": 11,
             "region": "South",
             "kenpom": 9.49,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "LIP"
         },
         {
             "name": "Marquette",
@@ -102,7 +114,8 @@
             "index": 12,
             "region": "South",
             "kenpom": 21.58,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "MARQ"
         },
         {
             "name": "New Mexico",
@@ -110,7 +123,8 @@
             "index": 13,
             "region": "South",
             "kenpom": 17.32,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "UNM"
         },
         {
             "name": "Mich. St.",
@@ -118,7 +132,8 @@
             "index": 14,
             "region": "South",
             "kenpom": 27.57,
-            "kenpom_name": "Michigan St."
+            "kenpom_name": "Michigan St.",
+            "espn_name": "MSU"
         },
         {
             "name": "Bryant",
@@ -126,7 +141,8 @@
             "index": 15,
             "region": "South",
             "kenpom": 1.25,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "BRY"
         },
         {
             "name": "Florida",
@@ -134,7 +150,8 @@
             "index": 16,
             "region": "West",
             "kenpom": 36.16,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "FLA"
         },
         {
             "name": "Norfolk St.",
@@ -142,7 +159,8 @@
             "index": 17,
             "region": "West",
             "kenpom": -1.53,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "NORF"
         },
         {
             "name": "UConn",
@@ -150,7 +168,8 @@
             "index": 18,
             "region": "West",
             "kenpom": 19.34,
-            "kenpom_name": "Connecticut"
+            "kenpom_name": "Connecticut",
+            "espn_name": "CONN"
         },
         {
             "name": "Oklahoma",
@@ -158,7 +177,8 @@
             "index": 19,
             "region": "West",
             "kenpom": 18.36,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "OU"
         },
         {
             "name": "Memphis",
@@ -166,7 +186,8 @@
             "index": 20,
             "region": "West",
             "kenpom": 15.35,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "MEM"
         },
         {
             "name": "Colo. St.",
@@ -174,7 +195,8 @@
             "index": 21,
             "region": "West",
             "kenpom": 17.29,
-            "kenpom_name": "Colorado St."
+            "kenpom_name": "Colorado St.",
+            "espn_name": "CSU"
         },
         {
             "name": "Maryland",
@@ -182,7 +204,8 @@
             "index": 22,
             "region": "West",
             "kenpom": 26.35,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "MD"
         },
         {
             "name": "Grand Canyon",
@@ -190,7 +213,8 @@
             "index": 23,
             "region": "West",
             "kenpom": 7.22,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "GCU"
         },
         {
             "name": "Missouri",
@@ -198,7 +222,8 @@
             "index": 24,
             "region": "West",
             "kenpom": 24.42,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "MIZ"
         },
         {
             "name": "Drake",
@@ -206,7 +231,8 @@
             "index": 25,
             "region": "West",
             "kenpom": 14.14,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "DRKE"
         },
         {
             "name": "Texas Tech",
@@ -214,7 +240,8 @@
             "index": 26,
             "region": "West",
             "kenpom": 28.05,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "TTU"
         },
         {
             "name": "UNCW",
@@ -222,7 +249,8 @@
             "index": 27,
             "region": "West",
             "kenpom": 5.14,
-            "kenpom_name": "UNC Wilmington"
+            "kenpom_name": "UNC Wilmington",
+            "espn_name": "UNCW"
         },
         {
             "name": "Kansas",
@@ -230,7 +258,8 @@
             "index": 28,
             "region": "West",
             "kenpom": 23.26,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "KU"
         },
         {
             "name": "Arkansas",
@@ -238,7 +267,8 @@
             "index": 29,
             "region": "West",
             "kenpom": 17.71,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "ARK"
         },
         {
             "name": "St. John's",
@@ -246,7 +276,8 @@
             "index": 30,
             "region": "West",
             "kenpom": 26.38,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "SJU"
         },
         {
             "name": "Omaha",
@@ -254,7 +285,8 @@
             "index": 31,
             "region": "West",
             "kenpom": 0.51,
-            "kenpom_name": "Nebraska Omaha"
+            "kenpom_name": "Nebraska Omaha",
+            "espn_name": "OMA"
         },
         {
             "name": "Duke",
@@ -262,15 +294,17 @@
             "index": 32,
             "region": "East",
             "kenpom": 38.15,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "DUKE"
         },
         {
-            "name": "AMER/MTSM",
+            "name": "Mount St. Mary's",
             "seed": 16,
             "index": 33,
             "region": "East",
-            "kenpom": -5.98,
-            "kenpom_name": "American"
+            "kenpom": -6.03,
+            "kenpom_name": "Mount St. Mary's",
+            "espn_name": "MSM"
         },
         {
             "name": "Miss. St.",
@@ -278,7 +312,8 @@
             "index": 34,
             "region": "East",
             "kenpom": 20.11,
-            "kenpom_name": "Mississippi St."
+            "kenpom_name": "Mississippi St.",
+            "espn_name": "MSST"
         },
         {
             "name": "Baylor",
@@ -286,7 +321,8 @@
             "index": 35,
             "region": "East",
             "kenpom": 21.15,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "BAY"
         },
         {
             "name": "Oregon",
@@ -294,7 +330,8 @@
             "index": 36,
             "region": "East",
             "kenpom": 20.15,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "ORE"
         },
         {
             "name": "Liberty",
@@ -302,7 +339,8 @@
             "index": 37,
             "region": "East",
             "kenpom": 13.53,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "LIB"
         },
         {
             "name": "Arizona",
@@ -310,7 +348,8 @@
             "index": 38,
             "region": "East",
             "kenpom": 25.73,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "ARIZ"
         },
         {
             "name": "Akron",
@@ -318,7 +357,8 @@
             "index": 39,
             "region": "East",
             "kenpom": 6.58,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "AKR"
         },
         {
             "name": "BYU",
@@ -326,7 +366,8 @@
             "index": 40,
             "region": "East",
             "kenpom": 22.39,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "BYU"
         },
         {
             "name": "VCU",
@@ -334,7 +375,8 @@
             "index": 41,
             "region": "East",
             "kenpom": 20.61,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "VCU"
         },
         {
             "name": "Wisconsin",
@@ -342,7 +384,8 @@
             "index": 42,
             "region": "East",
             "kenpom": 25.98,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "WIS"
         },
         {
             "name": "Montana",
@@ -350,7 +393,8 @@
             "index": 43,
             "region": "East",
             "kenpom": 0.38,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "MONT"
         },
         {
             "name": "Saint Mary's",
@@ -358,7 +402,8 @@
             "index": 44,
             "region": "East",
             "kenpom": 23.09,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "SMC"
         },
         {
             "name": "Vanderbilt",
@@ -366,7 +411,8 @@
             "index": 45,
             "region": "East",
             "kenpom": 16.16,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "VAN"
         },
         {
             "name": "Alabama",
@@ -374,7 +420,8 @@
             "index": 46,
             "region": "East",
             "kenpom": 29.93,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "ALA"
         },
         {
             "name": "Robert Morris",
@@ -382,7 +429,8 @@
             "index": 47,
             "region": "East",
             "kenpom": 2.09,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "RMU"
         },
         {
             "name": "Houston",
@@ -390,7 +438,8 @@
             "index": 48,
             "region": "Midwest",
             "kenpom": 35.44,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "HOU"
         },
         {
             "name": "SIUE",
@@ -398,7 +447,8 @@
             "index": 49,
             "region": "Midwest",
             "kenpom": -4.32,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "SIUE"
         },
         {
             "name": "Gonzaga",
@@ -406,7 +456,8 @@
             "index": 50,
             "region": "Midwest",
             "kenpom": 27.29,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "GONZ"
         },
         {
             "name": "Georgia",
@@ -414,7 +465,8 @@
             "index": 51,
             "region": "Midwest",
             "kenpom": 19.39,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "UGA"
         },
         {
             "name": "Clemson",
@@ -422,7 +474,8 @@
             "index": 52,
             "region": "Midwest",
             "kenpom": 23.93,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "CLEM"
         },
         {
             "name": "McNeese",
@@ -430,7 +483,8 @@
             "index": 53,
             "region": "Midwest",
             "kenpom": 13.69,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "MCN"
         },
         {
             "name": "Purdue",
@@ -438,7 +492,8 @@
             "index": 54,
             "region": "Midwest",
             "kenpom": 23.84,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "PUR"
         },
         {
             "name": "High Point",
@@ -446,7 +501,8 @@
             "index": 55,
             "region": "Midwest",
             "kenpom": 9.3,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "HPU"
         },
         {
             "name": "Illinois",
@@ -454,15 +510,17 @@
             "index": 56,
             "region": "Midwest",
             "kenpom": 23.56,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "ILL"
         },
         {
-            "name": "TEX/XAV",
+            "name": "Xavier",
             "seed": 11,
             "index": 57,
             "region": "Midwest",
-            "kenpom": 17.15,
-            "kenpom_name": "Texas"
+            "kenpom": 17.54,
+            "kenpom_name": "Xavier",
+            "espn_name": "XAV"
         },
         {
             "name": "Kentucky",
@@ -470,7 +528,8 @@
             "index": 58,
             "region": "Midwest",
             "kenpom": 24.26,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "UK"
         },
         {
             "name": "Troy",
@@ -478,7 +537,8 @@
             "index": 59,
             "region": "Midwest",
             "kenpom": 6.88,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "TROY"
         },
         {
             "name": "UCLA",
@@ -486,7 +546,8 @@
             "index": 60,
             "region": "Midwest",
             "kenpom": 21.76,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "UCLA"
         },
         {
             "name": "Utah St.",
@@ -494,7 +555,8 @@
             "index": 61,
             "region": "Midwest",
             "kenpom": 15.22,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "USU"
         },
 
         {
@@ -503,7 +565,8 @@
             "index": 62,
             "region": "Midwest",
             "kenpom": 31.15,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "TENN"
         },
         {
             "name": "Wofford",
@@ -511,7 +574,8 @@
             "index": 63,
             "region": "Midwest",
             "kenpom": 4.16,
-            "kenpom_name": null
+            "kenpom_name": null,
+            "espn_name": "WOF"
         }
     ],
     "games": [

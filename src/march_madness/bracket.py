@@ -9,10 +9,15 @@ class Team(pydantic.BaseModel):
     region: str = pydantic.Field(repr=False)
     kenpom: float | None = pydantic.Field(default=None, repr=False)
     kenpom_name: str | None = pydantic.Field(default=None, repr=False)
+    espn_name: str | None = pydantic.Field(default=None, repr=False)
 
     @property
     def kenpom_id(self) -> str:
         return self.kenpom_name or self.name
+    
+    @property
+    def espn_id(self) -> str:
+        return self.espn_name or self.name
 
 
 class Game(pydantic.BaseModel):

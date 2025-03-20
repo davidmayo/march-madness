@@ -1,0 +1,1031 @@
+{
+    "bracket": {
+        "teams": [
+            {
+                "name": "Auburn",
+                "seed": 1,
+                "index": 0,
+                "region": "South",
+                "kenpom": 35.16,
+                "kenpom_name": null,
+                "espn_name": "AUB"
+            },
+            {
+                "name": "Alabama St.",
+                "seed": 16,
+                "index": 1,
+                "region": "South",
+                "kenpom": -9.25,
+                "kenpom_name": "Alabama St.",
+                "espn_name": "ALST"
+            },
+            {
+                "name": "Louisville",
+                "seed": 8,
+                "index": 2,
+                "region": "South",
+                "kenpom": 22.72,
+                "kenpom_name": null,
+                "espn_name": "LOU"
+            },
+            {
+                "name": "Creighton",
+                "seed": 9,
+                "index": 3,
+                "region": "South",
+                "kenpom": 18.63,
+                "kenpom_name": null,
+                "espn_name": "CREI"
+            },
+            {
+                "name": "Michigan",
+                "seed": 5,
+                "index": 4,
+                "region": "South",
+                "kenpom": 22.31,
+                "kenpom_name": null,
+                "espn_name": "MICH"
+            },
+            {
+                "name": "UC San Diego",
+                "seed": 12,
+                "index": 5,
+                "region": "South",
+                "kenpom": 18.4,
+                "kenpom_name": null,
+                "espn_name": "UCSD"
+            },
+            {
+                "name": "Texas A&M",
+                "seed": 4,
+                "index": 6,
+                "region": "South",
+                "kenpom": 24.13,
+                "kenpom_name": null,
+                "espn_name": "TA&M"
+            },
+            {
+                "name": "Yale",
+                "seed": 13,
+                "index": 7,
+                "region": "South",
+                "kenpom": 11.03,
+                "kenpom_name": null,
+                "espn_name": "YALE"
+            },
+            {
+                "name": "Ole Miss",
+                "seed": 6,
+                "index": 8,
+                "region": "South",
+                "kenpom": 22.14,
+                "kenpom_name": "Mississippi",
+                "espn_name": "MISS"
+            },
+            {
+                "name": "North Carolina",
+                "seed": 11,
+                "index": 9,
+                "region": "South",
+                "kenpom": 20.65,
+                "kenpom_name": "North Carolina",
+                "espn_name": "UNC"
+            },
+            {
+                "name": "Iowa St.",
+                "seed": 3,
+                "index": 10,
+                "region": "South",
+                "kenpom": 27.0,
+                "kenpom_name": null,
+                "espn_name": "ISU"
+            },
+            {
+                "name": "Lipscomb",
+                "seed": 14,
+                "index": 11,
+                "region": "South",
+                "kenpom": 9.54,
+                "kenpom_name": null,
+                "espn_name": "LIP"
+            },
+            {
+                "name": "Marquette",
+                "seed": 7,
+                "index": 12,
+                "region": "South",
+                "kenpom": 21.53,
+                "kenpom_name": null,
+                "espn_name": "MARQ"
+            },
+            {
+                "name": "New Mexico",
+                "seed": 10,
+                "index": 13,
+                "region": "South",
+                "kenpom": 17.01,
+                "kenpom_name": null,
+                "espn_name": "UNM"
+            },
+            {
+                "name": "Mich. St.",
+                "seed": 2,
+                "index": 14,
+                "region": "South",
+                "kenpom": 27.64,
+                "kenpom_name": "Michigan St.",
+                "espn_name": "MSU"
+            },
+            {
+                "name": "Bryant",
+                "seed": 15,
+                "index": 15,
+                "region": "South",
+                "kenpom": 1.17,
+                "kenpom_name": null,
+                "espn_name": "BRY"
+            },
+            {
+                "name": "Florida",
+                "seed": 1,
+                "index": 16,
+                "region": "West",
+                "kenpom": 36.24,
+                "kenpom_name": null,
+                "espn_name": "FLA"
+            },
+            {
+                "name": "Norfolk St.",
+                "seed": 16,
+                "index": 17,
+                "region": "West",
+                "kenpom": -1.5,
+                "kenpom_name": null,
+                "espn_name": "NORF"
+            },
+            {
+                "name": "UConn",
+                "seed": 8,
+                "index": 18,
+                "region": "West",
+                "kenpom": 19.29,
+                "kenpom_name": "Connecticut",
+                "espn_name": "CONN"
+            },
+            {
+                "name": "Oklahoma",
+                "seed": 9,
+                "index": 19,
+                "region": "West",
+                "kenpom": 18.39,
+                "kenpom_name": null,
+                "espn_name": "OU"
+            },
+            {
+                "name": "Memphis",
+                "seed": 5,
+                "index": 20,
+                "region": "West",
+                "kenpom": 15.39,
+                "kenpom_name": null,
+                "espn_name": "MEM"
+            },
+            {
+                "name": "Colo. St.",
+                "seed": 12,
+                "index": 21,
+                "region": "West",
+                "kenpom": 16.95,
+                "kenpom_name": "Colorado St.",
+                "espn_name": "CSU"
+            },
+            {
+                "name": "Maryland",
+                "seed": 4,
+                "index": 22,
+                "region": "West",
+                "kenpom": 26.35,
+                "kenpom_name": null,
+                "espn_name": "MD"
+            },
+            {
+                "name": "Grand Canyon",
+                "seed": 13,
+                "index": 23,
+                "region": "West",
+                "kenpom": 7.19,
+                "kenpom_name": null,
+                "espn_name": "GCU"
+            },
+            {
+                "name": "Missouri",
+                "seed": 6,
+                "index": 24,
+                "region": "West",
+                "kenpom": 24.49,
+                "kenpom_name": null,
+                "espn_name": "MIZ"
+            },
+            {
+                "name": "Drake",
+                "seed": 11,
+                "index": 25,
+                "region": "West",
+                "kenpom": 14.17,
+                "kenpom_name": null,
+                "espn_name": "DRKE"
+            },
+            {
+                "name": "Texas Tech",
+                "seed": 3,
+                "index": 26,
+                "region": "West",
+                "kenpom": 28.05,
+                "kenpom_name": null,
+                "espn_name": "TTU"
+            },
+            {
+                "name": "UNCW",
+                "seed": 14,
+                "index": 27,
+                "region": "West",
+                "kenpom": 5.18,
+                "kenpom_name": "UNC Wilmington",
+                "espn_name": "UNCW"
+            },
+            {
+                "name": "Kansas",
+                "seed": 7,
+                "index": 28,
+                "region": "West",
+                "kenpom": 23.3,
+                "kenpom_name": null,
+                "espn_name": "KU"
+            },
+            {
+                "name": "Arkansas",
+                "seed": 10,
+                "index": 29,
+                "region": "West",
+                "kenpom": 17.77,
+                "kenpom_name": null,
+                "espn_name": "ARK"
+            },
+            {
+                "name": "St. John's",
+                "seed": 2,
+                "index": 30,
+                "region": "West",
+                "kenpom": 26.32,
+                "kenpom_name": null,
+                "espn_name": "SJU"
+            },
+            {
+                "name": "Omaha",
+                "seed": 15,
+                "index": 31,
+                "region": "West",
+                "kenpom": 0.47,
+                "kenpom_name": "Nebraska Omaha",
+                "espn_name": "OMA"
+            },
+            {
+                "name": "Duke",
+                "seed": 1,
+                "index": 32,
+                "region": "East",
+                "kenpom": 38.27,
+                "kenpom_name": null,
+                "espn_name": "DUKE"
+            },
+            {
+                "name": "Mount St. Mary's",
+                "seed": 16,
+                "index": 33,
+                "region": "East",
+                "kenpom": -6.72,
+                "kenpom_name": "Mount St. Mary's",
+                "espn_name": "MSM"
+            },
+            {
+                "name": "Miss. St.",
+                "seed": 8,
+                "index": 34,
+                "region": "East",
+                "kenpom": 20.16,
+                "kenpom_name": "Mississippi St.",
+                "espn_name": "MSST"
+            },
+            {
+                "name": "Baylor",
+                "seed": 9,
+                "index": 35,
+                "region": "East",
+                "kenpom": 21.16,
+                "kenpom_name": null,
+                "espn_name": "BAY"
+            },
+            {
+                "name": "Oregon",
+                "seed": 5,
+                "index": 36,
+                "region": "East",
+                "kenpom": 20.12,
+                "kenpom_name": null,
+                "espn_name": "ORE"
+            },
+            {
+                "name": "Liberty",
+                "seed": 12,
+                "index": 37,
+                "region": "East",
+                "kenpom": 13.78,
+                "kenpom_name": null,
+                "espn_name": "LIB"
+            },
+            {
+                "name": "Arizona",
+                "seed": 4,
+                "index": 38,
+                "region": "East",
+                "kenpom": 25.74,
+                "kenpom_name": null,
+                "espn_name": "ARIZ"
+            },
+            {
+                "name": "Akron",
+                "seed": 13,
+                "index": 39,
+                "region": "East",
+                "kenpom": 6.92,
+                "kenpom_name": null,
+                "espn_name": "AKR"
+            },
+            {
+                "name": "BYU",
+                "seed": 6,
+                "index": 40,
+                "region": "East",
+                "kenpom": 22.36,
+                "kenpom_name": null,
+                "espn_name": "BYU"
+            },
+            {
+                "name": "VCU",
+                "seed": 11,
+                "index": 41,
+                "region": "East",
+                "kenpom": 20.22,
+                "kenpom_name": null,
+                "espn_name": "VCU"
+            },
+            {
+                "name": "Wisconsin",
+                "seed": 3,
+                "index": 42,
+                "region": "East",
+                "kenpom": 25.99,
+                "kenpom_name": null,
+                "espn_name": "WIS"
+            },
+            {
+                "name": "Montana",
+                "seed": 14,
+                "index": 43,
+                "region": "East",
+                "kenpom": 0.27,
+                "kenpom_name": null,
+                "espn_name": "MONT"
+            },
+            {
+                "name": "Saint Mary's",
+                "seed": 7,
+                "index": 44,
+                "region": "East",
+                "kenpom": 23.13,
+                "kenpom_name": null,
+                "espn_name": "SMC"
+            },
+            {
+                "name": "Vanderbilt",
+                "seed": 10,
+                "index": 45,
+                "region": "East",
+                "kenpom": 16.2,
+                "kenpom_name": null,
+                "espn_name": "VAN"
+            },
+            {
+                "name": "Alabama",
+                "seed": 2,
+                "index": 46,
+                "region": "East",
+                "kenpom": 30.05,
+                "kenpom_name": null,
+                "espn_name": "ALA"
+            },
+            {
+                "name": "Robert Morris",
+                "seed": 15,
+                "index": 47,
+                "region": "East",
+                "kenpom": 2.15,
+                "kenpom_name": null,
+                "espn_name": "RMU"
+            },
+            {
+                "name": "Houston",
+                "seed": 1,
+                "index": 48,
+                "region": "Midwest",
+                "kenpom": 35.42,
+                "kenpom_name": null,
+                "espn_name": "HOU"
+            },
+            {
+                "name": "SIUE",
+                "seed": 16,
+                "index": 49,
+                "region": "Midwest",
+                "kenpom": -4.25,
+                "kenpom_name": null,
+                "espn_name": "SIUE"
+            },
+            {
+                "name": "Gonzaga",
+                "seed": 8,
+                "index": 50,
+                "region": "Midwest",
+                "kenpom": 27.28,
+                "kenpom_name": null,
+                "espn_name": "GONZ"
+            },
+            {
+                "name": "Georgia",
+                "seed": 9,
+                "index": 51,
+                "region": "Midwest",
+                "kenpom": 19.4,
+                "kenpom_name": null,
+                "espn_name": "UGA"
+            },
+            {
+                "name": "Clemson",
+                "seed": 5,
+                "index": 52,
+                "region": "Midwest",
+                "kenpom": 23.94,
+                "kenpom_name": null,
+                "espn_name": "CLEM"
+            },
+            {
+                "name": "McNeese",
+                "seed": 12,
+                "index": 53,
+                "region": "Midwest",
+                "kenpom": 13.79,
+                "kenpom_name": null,
+                "espn_name": "MCN"
+            },
+            {
+                "name": "Purdue",
+                "seed": 4,
+                "index": 54,
+                "region": "Midwest",
+                "kenpom": 23.87,
+                "kenpom_name": null,
+                "espn_name": "PUR"
+            },
+            {
+                "name": "High Point",
+                "seed": 13,
+                "index": 55,
+                "region": "Midwest",
+                "kenpom": 9.35,
+                "kenpom_name": null,
+                "espn_name": "HPU"
+            },
+            {
+                "name": "Illinois",
+                "seed": 6,
+                "index": 56,
+                "region": "Midwest",
+                "kenpom": 23.59,
+                "kenpom_name": null,
+                "espn_name": "ILL"
+            },
+            {
+                "name": "Xavier",
+                "seed": 11,
+                "index": 57,
+                "region": "Midwest",
+                "kenpom": 17.17,
+                "kenpom_name": "Xavier",
+                "espn_name": "XAV"
+            },
+            {
+                "name": "Kentucky",
+                "seed": 3,
+                "index": 58,
+                "region": "Midwest",
+                "kenpom": 24.32,
+                "kenpom_name": null,
+                "espn_name": "UK"
+            },
+            {
+                "name": "Troy",
+                "seed": 14,
+                "index": 59,
+                "region": "Midwest",
+                "kenpom": 7.17,
+                "kenpom_name": null,
+                "espn_name": "TROY"
+            },
+            {
+                "name": "UCLA",
+                "seed": 7,
+                "index": 60,
+                "region": "Midwest",
+                "kenpom": 21.78,
+                "kenpom_name": null,
+                "espn_name": "UCLA"
+            },
+            {
+                "name": "Utah St.",
+                "seed": 10,
+                "index": 61,
+                "region": "Midwest",
+                "kenpom": 14.87,
+                "kenpom_name": null,
+                "espn_name": "USU"
+            },
+            {
+                "name": "Tennessee",
+                "seed": 2,
+                "index": 62,
+                "region": "Midwest",
+                "kenpom": 31.2,
+                "kenpom_name": null,
+                "espn_name": "TENN"
+            },
+            {
+                "name": "Wofford",
+                "seed": 15,
+                "index": 63,
+                "region": "Midwest",
+                "kenpom": 4.23,
+                "kenpom_name": null,
+                "espn_name": "WOF"
+            }
+        ],
+        "games": [
+            {
+                "team1_index": 0,
+                "team2_index": 1,
+                "winner_index": 0,
+                "game_id": 0,
+                "round_of": 64
+            },
+            {
+                "team1_index": 2,
+                "team2_index": 3,
+                "winner_index": 2,
+                "game_id": 1,
+                "round_of": 64
+            },
+            {
+                "team1_index": 4,
+                "team2_index": 5,
+                "winner_index": 4,
+                "game_id": 2,
+                "round_of": 64
+            },
+            {
+                "team1_index": 6,
+                "team2_index": 7,
+                "winner_index": 6,
+                "game_id": 3,
+                "round_of": 64
+            },
+            {
+                "team1_index": 8,
+                "team2_index": 9,
+                "winner_index": 8,
+                "game_id": 4,
+                "round_of": 64
+            },
+            {
+                "team1_index": 10,
+                "team2_index": 11,
+                "winner_index": 10,
+                "game_id": 5,
+                "round_of": 64
+            },
+            {
+                "team1_index": 12,
+                "team2_index": 13,
+                "winner_index": 13,
+                "game_id": 6,
+                "round_of": 64
+            },
+            {
+                "team1_index": 14,
+                "team2_index": 15,
+                "winner_index": 14,
+                "game_id": 7,
+                "round_of": 64
+            },
+            {
+                "team1_index": 16,
+                "team2_index": 17,
+                "winner_index": 16,
+                "game_id": 8,
+                "round_of": 64
+            },
+            {
+                "team1_index": 18,
+                "team2_index": 19,
+                "winner_index": 18,
+                "game_id": 9,
+                "round_of": 64
+            },
+            {
+                "team1_index": 20,
+                "team2_index": 21,
+                "winner_index": 20,
+                "game_id": 10,
+                "round_of": 64
+            },
+            {
+                "team1_index": 22,
+                "team2_index": 23,
+                "winner_index": 22,
+                "game_id": 11,
+                "round_of": 64
+            },
+            {
+                "team1_index": 24,
+                "team2_index": 25,
+                "winner_index": 24,
+                "game_id": 12,
+                "round_of": 64
+            },
+            {
+                "team1_index": 26,
+                "team2_index": 27,
+                "winner_index": 26,
+                "game_id": 13,
+                "round_of": 64
+            },
+            {
+                "team1_index": 28,
+                "team2_index": 29,
+                "winner_index": 28,
+                "game_id": 14,
+                "round_of": 64
+            },
+            {
+                "team1_index": 30,
+                "team2_index": 31,
+                "winner_index": 30,
+                "game_id": 15,
+                "round_of": 64
+            },
+            {
+                "team1_index": 32,
+                "team2_index": 33,
+                "winner_index": 32,
+                "game_id": 16,
+                "round_of": 64
+            },
+            {
+                "team1_index": 34,
+                "team2_index": 35,
+                "winner_index": 35,
+                "game_id": 17,
+                "round_of": 64
+            },
+            {
+                "team1_index": 36,
+                "team2_index": 37,
+                "winner_index": 36,
+                "game_id": 18,
+                "round_of": 64
+            },
+            {
+                "team1_index": 38,
+                "team2_index": 39,
+                "winner_index": 38,
+                "game_id": 19,
+                "round_of": 64
+            },
+            {
+                "team1_index": 40,
+                "team2_index": 41,
+                "winner_index": 40,
+                "game_id": 20,
+                "round_of": 64
+            },
+            {
+                "team1_index": 42,
+                "team2_index": 43,
+                "winner_index": 42,
+                "game_id": 21,
+                "round_of": 64
+            },
+            {
+                "team1_index": 44,
+                "team2_index": 45,
+                "winner_index": 45,
+                "game_id": 22,
+                "round_of": 64
+            },
+            {
+                "team1_index": 46,
+                "team2_index": 47,
+                "winner_index": 46,
+                "game_id": 23,
+                "round_of": 64
+            },
+            {
+                "team1_index": 48,
+                "team2_index": 49,
+                "winner_index": 48,
+                "game_id": 24,
+                "round_of": 64
+            },
+            {
+                "team1_index": 50,
+                "team2_index": 51,
+                "winner_index": 50,
+                "game_id": 25,
+                "round_of": 64
+            },
+            {
+                "team1_index": 52,
+                "team2_index": 53,
+                "winner_index": 52,
+                "game_id": 26,
+                "round_of": 64
+            },
+            {
+                "team1_index": 54,
+                "team2_index": 55,
+                "winner_index": 54,
+                "game_id": 27,
+                "round_of": 64
+            },
+            {
+                "team1_index": 56,
+                "team2_index": 57,
+                "winner_index": 56,
+                "game_id": 28,
+                "round_of": 64
+            },
+            {
+                "team1_index": 58,
+                "team2_index": 59,
+                "winner_index": 58,
+                "game_id": 29,
+                "round_of": 64
+            },
+            {
+                "team1_index": 60,
+                "team2_index": 61,
+                "winner_index": 60,
+                "game_id": 30,
+                "round_of": 64
+            },
+            {
+                "team1_index": 62,
+                "team2_index": 63,
+                "winner_index": 62,
+                "game_id": 31,
+                "round_of": 64
+            },
+            {
+                "team1_index": 0,
+                "team2_index": 2,
+                "winner_index": 0,
+                "game_id": 32,
+                "round_of": 32
+            },
+            {
+                "team1_index": 4,
+                "team2_index": 6,
+                "winner_index": 6,
+                "game_id": 33,
+                "round_of": 32
+            },
+            {
+                "team1_index": 8,
+                "team2_index": 10,
+                "winner_index": 10,
+                "game_id": 34,
+                "round_of": 32
+            },
+            {
+                "team1_index": 13,
+                "team2_index": 14,
+                "winner_index": 14,
+                "game_id": 35,
+                "round_of": 32
+            },
+            {
+                "team1_index": 16,
+                "team2_index": 18,
+                "winner_index": 16,
+                "game_id": 36,
+                "round_of": 32
+            },
+            {
+                "team1_index": 20,
+                "team2_index": 22,
+                "winner_index": 22,
+                "game_id": 37,
+                "round_of": 32
+            },
+            {
+                "team1_index": 24,
+                "team2_index": 26,
+                "winner_index": 26,
+                "game_id": 38,
+                "round_of": 32
+            },
+            {
+                "team1_index": 28,
+                "team2_index": 30,
+                "winner_index": 30,
+                "game_id": 39,
+                "round_of": 32
+            },
+            {
+                "team1_index": 32,
+                "team2_index": 35,
+                "winner_index": 32,
+                "game_id": 40,
+                "round_of": 32
+            },
+            {
+                "team1_index": 36,
+                "team2_index": 38,
+                "winner_index": 36,
+                "game_id": 41,
+                "round_of": 32
+            },
+            {
+                "team1_index": 40,
+                "team2_index": 42,
+                "winner_index": 42,
+                "game_id": 42,
+                "round_of": 32
+            },
+            {
+                "team1_index": 45,
+                "team2_index": 46,
+                "winner_index": 46,
+                "game_id": 43,
+                "round_of": 32
+            },
+            {
+                "team1_index": 48,
+                "team2_index": 50,
+                "winner_index": 48,
+                "game_id": 44,
+                "round_of": 32
+            },
+            {
+                "team1_index": 52,
+                "team2_index": 54,
+                "winner_index": 54,
+                "game_id": 45,
+                "round_of": 32
+            },
+            {
+                "team1_index": 56,
+                "team2_index": 58,
+                "winner_index": 56,
+                "game_id": 46,
+                "round_of": 32
+            },
+            {
+                "team1_index": 60,
+                "team2_index": 62,
+                "winner_index": 62,
+                "game_id": 47,
+                "round_of": 32
+            },
+            {
+                "team1_index": 0,
+                "team2_index": 6,
+                "winner_index": 0,
+                "game_id": 48,
+                "round_of": 16
+            },
+            {
+                "team1_index": 10,
+                "team2_index": 14,
+                "winner_index": 14,
+                "game_id": 49,
+                "round_of": 16
+            },
+            {
+                "team1_index": 16,
+                "team2_index": 22,
+                "winner_index": 16,
+                "game_id": 50,
+                "round_of": 16
+            },
+            {
+                "team1_index": 26,
+                "team2_index": 30,
+                "winner_index": 30,
+                "game_id": 51,
+                "round_of": 16
+            },
+            {
+                "team1_index": 32,
+                "team2_index": 36,
+                "winner_index": 32,
+                "game_id": 52,
+                "round_of": 16
+            },
+            {
+                "team1_index": 42,
+                "team2_index": 46,
+                "winner_index": 42,
+                "game_id": 53,
+                "round_of": 16
+            },
+            {
+                "team1_index": 48,
+                "team2_index": 54,
+                "winner_index": 48,
+                "game_id": 54,
+                "round_of": 16
+            },
+            {
+                "team1_index": 56,
+                "team2_index": 62,
+                "winner_index": 62,
+                "game_id": 55,
+                "round_of": 16
+            },
+            {
+                "team1_index": 0,
+                "team2_index": 14,
+                "winner_index": 0,
+                "game_id": 56,
+                "round_of": 8
+            },
+            {
+                "team1_index": 16,
+                "team2_index": 30,
+                "winner_index": 30,
+                "game_id": 57,
+                "round_of": 8
+            },
+            {
+                "team1_index": 32,
+                "team2_index": 42,
+                "winner_index": 32,
+                "game_id": 58,
+                "round_of": 8
+            },
+            {
+                "team1_index": 48,
+                "team2_index": 62,
+                "winner_index": 62,
+                "game_id": 59,
+                "round_of": 8
+            },
+            {
+                "team1_index": 0,
+                "team2_index": 30,
+                "winner_index": 0,
+                "game_id": 60,
+                "round_of": 4
+            },
+            {
+                "team1_index": 32,
+                "team2_index": 62,
+                "winner_index": 62,
+                "game_id": 61,
+                "round_of": 4
+            },
+            {
+                "team1_index": 0,
+                "team2_index": 62,
+                "winner_index": 0,
+                "game_id": 62,
+                "round_of": 2
+            }
+        ]
+    },
+    "bracket_name": "noah_patrick",
+    "user": "noah_patrick",
+    "url": null,
+    "json_path": "data\\user_brackets\\0002.json",
+    "score": null,
+    "predicted_final_score": null
+}

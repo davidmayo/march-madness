@@ -18,6 +18,12 @@ def get_bracket() -> Bracket:
         update_bracket_kenpoms(bracket)
     return bracket
 
+def get_team(espn_id: str) -> Team | None:
+    bracket = get_bracket()
+    for team in bracket.teams:
+        if team.espn_id == espn_id:
+            return team
+    return None
 
 if __name__ == "__main__":
     from rich.pretty import pprint
