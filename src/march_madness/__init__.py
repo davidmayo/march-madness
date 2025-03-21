@@ -29,6 +29,35 @@ if __name__ == "__main__":
     from rich.pretty import pprint
 
     bracket = get_bracket()
-    pprint(get_bracket())
+    # CURRENT_BRACKET_PATH.write_text(bracket.model_dump_json(indent=4))
+    # pprint(get_bracket())
 
-    pprint(sorted(bracket.teams, key=lambda team: team.kenpom, reverse=True))
+    # pprint(sorted(bracket.teams, key=lambda team: team.kenpom, reverse=True))
+
+    # THURSDAY GAMES, FIRST ROUND
+    bracket.advance_winner(game=bracket.games[0], winner_index=bracket.games[0].team1_index)
+    bracket.advance_winner(game=bracket.games[1], winner_index=bracket.games[1].team2_index)
+    bracket.advance_winner(game=bracket.games[2], winner_index=bracket.games[2].team1_index)
+    bracket.advance_winner(game=bracket.games[3], winner_index=bracket.games[3].team1_index)
+
+    bracket.advance_winner(game=bracket.games[12], winner_index=bracket.games[12].team2_index)
+    bracket.advance_winner(game=bracket.games[13], winner_index=bracket.games[13].team1_index) # TT
+    bracket.advance_winner(game=bracket.games[14], winner_index=bracket.games[14].team2_index)
+    bracket.advance_winner(game=bracket.games[15], winner_index=bracket.games[15].team1_index)
+
+    bracket.advance_winner(game=bracket.games[20], winner_index=bracket.games[20].team1_index)
+    bracket.advance_winner(game=bracket.games[21], winner_index=bracket.games[21].team1_index)
+
+    bracket.advance_winner(game=bracket.games[24], winner_index=bracket.games[24].team1_index)
+    bracket.advance_winner(game=bracket.games[25], winner_index=bracket.games[25].team1_index)
+    bracket.advance_winner(game=bracket.games[26], winner_index=bracket.games[26].team2_index)
+    bracket.advance_winner(game=bracket.games[27], winner_index=bracket.games[27].team1_index)
+    
+    bracket.advance_winner(game=bracket.games[30], winner_index=bracket.games[30].team1_index)
+    bracket.advance_winner(game=bracket.games[31], winner_index=bracket.games[31].team1_index)
+
+
+
+    from march_madness.visualize import plot_bracket
+
+    plot_bracket(bracket)
