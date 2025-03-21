@@ -34,6 +34,8 @@ if __name__ == "__main__":
 
     # pprint(sorted(bracket.teams, key=lambda team: team.kenpom, reverse=True))
 
+    bracket = Bracket.model_validate_json(INITIAL_BRACKET_PATH.read_text())
+
     # THURSDAY GAMES, FIRST ROUND
     bracket.advance_winner(game=bracket.games[0], winner_index=bracket.games[0].team1_index)
     bracket.advance_winner(game=bracket.games[1], winner_index=bracket.games[1].team2_index)
@@ -57,6 +59,7 @@ if __name__ == "__main__":
     bracket.advance_winner(game=bracket.games[31], winner_index=bracket.games[31].team1_index)
 
 
+    CURRENT_BRACKET_PATH.write_text(bracket.model_dump_json(indent=4))
 
     from march_madness.visualize import plot_bracket
 

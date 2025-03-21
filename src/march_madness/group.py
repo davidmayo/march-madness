@@ -146,7 +146,7 @@ if __name__ == "__main__":
     group = Group.load()
     pprint(group)
 
-    sim_group = SimGroup(group=group, current_bracket=get_bracket(), sim_count=100_000)
+    sim_group = SimGroup(group=group, current_bracket=get_bracket(), sim_count=10_000)
     print(f"\nAVERAGE SCORES:")
     pprint(
         sorted(sim_group.user_average_scores.items(), key=lambda x: x[1], reverse=True),
