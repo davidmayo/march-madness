@@ -16,7 +16,7 @@ def create_bracket(bracket: Bracket | None = None) -> go.Figure:
     # # DEBUG: Force a winner
     # bracket.advance_winner(bracket.games[1], bracket.games[1].team2_index)
 
-    sim = Simulation(bracket=bracket, sim_count=10_000)
+    sim = Simulation(bracket=bracket, sim_count=100)
 
     figure = go.Figure()
 

@@ -112,6 +112,15 @@ class Bracket(pydantic.BaseModel):
         else:
             self.games[next_game_id].team2_index = winner_index
 
+    def score(self, other: "Bracket") -> int:
+        score = 0
+        for game, other_game in zip(self.games, other.games):
+            game: Game
+            other_game: Game
+            if game.winner_index == other_game.winner_index:
+                score += 640 / game.round_of
+        return score
+
     def clone(self) -> "Bracket":
         return Bracket.model_validate_json(self.model_dump_json())
 
