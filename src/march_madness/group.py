@@ -146,7 +146,7 @@ if __name__ == "__main__":
     group = Group.load()
     pprint(group)
 
-    sim_group = SimGroup(group=group, current_bracket=get_bracket(), sim_count=10_000)
+    sim_group = SimGroup(group=group, current_bracket=get_bracket(), sim_count=100_000)
     print(f"\nAVERAGE SCORES:")
     pprint(
         sorted(sim_group.user_average_scores.items(), key=lambda x: x[1], reverse=True),
@@ -161,3 +161,19 @@ if __name__ == "__main__":
         ],
         indent_guides=False,
     )
+
+    title = "01_round_64_mid"
+    import json
+
+    with open(f"data/sim_results/{title}.json", "w") as file:
+        file.write(json.dumps(
+            {
+                "average_scores": sim_group.user_average_scores,
+                "winner_probabilities": {
+                    key: value * 100
+                    for key, value in
+                    sim_group.winner_prob.items()
+                },
+            },
+            indent=4,
+        ))

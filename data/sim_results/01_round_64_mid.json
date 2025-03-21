@@ -1,0 +1,24 @@
+{
+    "average_scores": {
+        "austin_jude": 407.4013,
+        "carrie_bruce": 593.0225,
+        "chloe_hart": 683.6621,
+        "danika_sparks": 536.9989,
+        "david_mayo": 585.2665,
+        "diddy_didier": 338.8017,
+        "ian_warford": 591.6311,
+        "mila_shearer": 700.9907,
+        "noah_patrick": 762.9807
+    },
+    "winner_probabilities": {
+        "david_mayo": 11.827,
+        "chloe_hart": 6.641,
+        "ian_warford": 9.751999999999999,
+        "carrie_bruce": 14.363000000000001,
+        "noah_patrick": 30.312,
+        "mila_shearer": 24.455,
+        "austin_jude": 0.375,
+        "danika_sparks": 2.248,
+        "diddy_didier": 0.027
+    }
+}
