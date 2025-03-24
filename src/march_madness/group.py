@@ -162,7 +162,7 @@ if __name__ == "__main__":
         indent_guides=False,
     )
 
-    title = "01_round_64_mid"
+    title = "04_round_32_end"
     import json
 
     with open(f"data/sim_results/{title}.json", "w") as file:

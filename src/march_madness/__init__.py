@@ -78,6 +78,33 @@ if __name__ == "__main__":
     bracket.advance_winner(game=bracket.games[31], winner_index=bracket.games[31].team1_index)
 
 
+    # ROUND OF 32
+    bracket.advance_winner(game=bracket.games[32], winner_index=bracket.games[32].team1_index)
+    bracket.advance_winner(game=bracket.games[33], winner_index=bracket.games[33].team1_index)    
+    bracket.advance_winner(game=bracket.games[34], winner_index=bracket.games[34].team1_index)
+    bracket.advance_winner(game=bracket.games[35], winner_index=bracket.games[35].team2_index)
+    bracket.advance_winner(game=bracket.games[36], winner_index=bracket.games[36].team1_index)
+    bracket.advance_winner(game=bracket.games[37], winner_index=bracket.games[37].team2_index)
+    bracket.advance_winner(game=bracket.games[38], winner_index=bracket.games[38].team2_index)
+    bracket.advance_winner(game=bracket.games[39], winner_index=bracket.games[39].team1_index)
+    bracket.advance_winner(game=bracket.games[40], winner_index=bracket.games[40].team1_index)
+    # bracket.advance_winner(game=bracket.games[41], winner_index=bracket.games[41].team1_index)  # OREGON
+    bracket.advance_winner(game=bracket.games[41], winner_index=bracket.games[41].team2_index)  # ARIZONA
+    bracket.advance_winner(game=bracket.games[42], winner_index=bracket.games[42].team1_index)
+    bracket.advance_winner(game=bracket.games[43], winner_index=bracket.games[43].team2_index)
+    bracket.advance_winner(game=bracket.games[44], winner_index=bracket.games[44].team1_index)
+    bracket.advance_winner(game=bracket.games[45], winner_index=bracket.games[45].team2_index)
+    bracket.advance_winner(game=bracket.games[46], winner_index=bracket.games[46].team2_index)
+    bracket.advance_winner(game=bracket.games[47], winner_index=bracket.games[47].team2_index)
+
+
+
+
+
+
+
+
+
     CURRENT_BRACKET_PATH.write_text(bracket.model_dump_json(indent=4))
 
     from march_madness.visualize import plot_bracket

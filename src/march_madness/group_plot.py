@@ -24,8 +24,8 @@ for file_index, file in enumerate(files):
         data = json.load(file)
 
     for user in user_names:
-        win_percent_data[user].append(data["winner_probabilities"][user])
-        score_data[user].append(data["average_scores"][user])
+        win_percent_data[user].append(data["winner_probabilities"].get(user, 0))
+        score_data[user].append(data["average_scores"].get(user, 0))
 # UV quirk workaround: https://github.com/astral-sh/uv/issues/7036#issuecomment-2416063312
 from os import environ
 from pathlib import Path
