@@ -81,7 +81,13 @@ class Group(pydantic.BaseModel):
 
 
 class SimGroup:
-    def __init__(self, group: Group, current_bracket: Bracket, sim_count: int = 100, suppress_print: bool = False) -> None:
+    def __init__(
+        self,
+        group: Group,
+        current_bracket: Bracket,
+        sim_count: int = 100,
+        suppress_print: bool = False,
+    ) -> None:
         self.group = group
         self.current_bracket = current_bracket
         self.sim_count = sim_count
@@ -150,37 +156,44 @@ if __name__ == "__main__":
 
     title = "05_round_16_mid"
     import json
+
     sim_result_json_path = Path(f"data/sim_results/{title}.json")
 
     if not sim_result_json_path.exists():
-        sim_group = SimGroup(group=group, current_bracket=get_bracket(), sim_count=100_000)
+        sim_group = SimGroup(
+            group=group, current_bracket=get_bracket(), sim_count=100_000
+        )
         print(f"\nAVERAGE SCORES:")
         pprint(
-            sorted(sim_group.user_average_scores.items(), key=lambda x: x[1], reverse=True),
+            sorted(
+                sim_group.user_average_scores.items(), key=lambda x: x[1], reverse=True
+            ),
             indent_guides=False,
         )
         print(f"\nWINNER PROBABILITIES (%):")
         pprint(
             [
                 (user, prob * 100)
-                for user, prob in
-                sorted(sim_group.winner_prob.items(), key=lambda x: x[1], reverse=True)
+                for user, prob in sorted(
+                    sim_group.winner_prob.items(), key=lambda x: x[1], reverse=True
+                )
             ],
             indent_guides=False,
         )
 
         with open(sim_result_json_path, "w") as file:
-            file.write(json.dumps(
-                {
-                    "average_scores": sim_group.user_average_scores,
-                    "winner_probabilities": {
-                        key: value * 100
-                        for key, value in
-                        sim_group.winner_prob.items()
+            file.write(
+                json.dumps(
+                    {
+                        "average_scores": sim_group.user_average_scores,
+                        "winner_probabilities": {
+                            key: value * 100
+                            for key, value in sim_group.winner_prob.items()
+                        },
                     },
-                },
-                indent=4,
-            ))
+                    indent=4,
+                )
+            )
     else:
         print(f"{sim_result_json_path} already exists.")
 
@@ -192,16 +205,12 @@ if __name__ == "__main__":
     sim_count = 10_000
 
     for game in current_bracket.current_round_games():
-        team1: Team = current_bracket.teams[ game.team1_index]
-        team2: Team = current_bracket.teams[ game.team2_index]
+        team1: Team = current_bracket.teams[game.team1_index]
+        team2: Team = current_bracket.teams[game.team2_index]
         # pprint(game, indent_guides=False)
         # print(f"({team1.seed}) {team1.name} vs ({team2.seed}) {team2.name}")
 
-        results: dict[str, list[float]] = {
-            user: [0, 0]
-            for user
-            in all_users
-        }
+        results: dict[str, list[float]] = {user: [0, 0] for user in all_users}
 
         for hypo_index, winner_index in enumerate([game.team1_index, game.team2_index]):
             winner: Team = current_bracket.teams[winner_index]
@@ -209,7 +218,12 @@ if __name__ == "__main__":
             bracket = current_bracket.clone()
             bracket.advance_winner(game=game, winner_index=winner_index)
 
-            sim_group = SimGroup(group=group, current_bracket=bracket, sim_count=sim_count, suppress_print=True)
+            sim_group = SimGroup(
+                group=group,
+                current_bracket=bracket,
+                sim_count=sim_count,
+                suppress_print=True,
+            )
             # print(f"\nAVERAGE SCORES:")
             # pprint(
             #     sorted(sim_group.user_average_scores.items(), key=lambda x: x[1], reverse=True),
@@ -226,12 +240,11 @@ if __name__ == "__main__":
             #     ],
             #     indent_guides=False,
             # )
-        
+
         results_tup = sorted(
             [
                 (user, value[0], value[1], value[1] - value[0])
-                for user, value in
-                results.items()
+                for user, value in results.items()
             ],
             key=lambda x: x[1],
             reverse=True,
@@ -239,8 +252,14 @@ if __name__ == "__main__":
         from rich.console import Console
         from rich.table import Table
         from rich import box
+
         console = Console()
-        table = Table(title=f"({team1.seed}) {team1.name} vs ({team2.seed}) {team2.name}" + f"\nHypothetical win % if ...", box=box.ROUNDED, caption=f"Based on {sim_count:,} simulations")
+        table = Table(
+            title=f"({team1.seed}) {team1.name} vs ({team2.seed}) {team2.name}"
+            + f"\nHypothetical win % if ...",
+            box=box.ROUNDED,
+            caption=f"Based on {sim_count:,} simulations",
+        )
         table.add_column("Name")
         table.add_column(f"{team1.name.upper()} wins")
         table.add_column(f"{team2.name.upper()} wins")
@@ -248,14 +267,10 @@ if __name__ == "__main__":
         for user, hypo1, hypo2, diff in results_tup:
             user_name = user.split("_")[0].capitalize()
             table.add_row(
-                user_name, 
-                f"{hypo1:>6.2f}%", 
-                f"{hypo2:>6.2f}%", 
-                f"{diff:>6.2f}%"
+                user_name, f"{hypo1:>6.2f}%", f"{hypo2:>6.2f}%", f"{diff:>6.2f}%"
             )
         console.print(table)
         print()
         # pprint(results)
 
         # pprint(results_tup)
-

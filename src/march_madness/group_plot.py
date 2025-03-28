@@ -35,6 +35,7 @@ from matplotlib.patches import Rectangle
 environ["TCL_LIBRARY"] = str(Path(base_prefix) / "tcl" / "tcl8.6")
 environ["TK_LIBRARY"] = str(Path(base_prefix) / "tcl" / "tk8.6")
 import matplotlib.pyplot as plt
+
 fig, [ax_score, ax_win] = plt.subplots(1, 2, figsize=(16, 9), layout="constrained")
 
 ax_score: plt.Axes
@@ -46,11 +47,43 @@ for user in user_names:
     ax_win.plot(win_percent_data[user], label=user, marker="o")
 
     color = ax_score.get_lines()[-1].get_color()
-    ax_score.text(0, score_data[user][0], first_name + " ", ha='right', va='center', fontsize=10, color=color)
-    ax_score.text(len(score_data[user]) - 1, score_data[user][-1], " " + first_name, ha='left', va='center', fontsize=10, color=color)
+    ax_score.text(
+        0,
+        score_data[user][0],
+        first_name + " ",
+        ha="right",
+        va="center",
+        fontsize=10,
+        color=color,
+    )
+    ax_score.text(
+        len(score_data[user]) - 1,
+        score_data[user][-1],
+        " " + first_name,
+        ha="left",
+        va="center",
+        fontsize=10,
+        color=color,
+    )
 
-    ax_win.text(0, win_percent_data[user][0], first_name + " ", ha='right', va='center', fontsize=10, color=color)
-    ax_win.text(len(win_percent_data[user]) - 1, win_percent_data[user][-1], " " + first_name, ha='left', va='center', fontsize=10, color=color)
+    ax_win.text(
+        0,
+        win_percent_data[user][0],
+        first_name + " ",
+        ha="right",
+        va="center",
+        fontsize=10,
+        color=color,
+    )
+    ax_win.text(
+        len(win_percent_data[user]) - 1,
+        win_percent_data[user][-1],
+        " " + first_name,
+        ha="left",
+        va="center",
+        fontsize=10,
+        color=color,
+    )
     # ax_score.text(0, score_data[user][0], first_name, ha='center', va='bottom', fontsize=10)
     # ax_score.text(len(score_data[user]) - 1, score_data[user][-1], first_name, ha='center', va='bottom', fontsize=10)
     # ax_win.text(0, win_percent_data[user][0], first_name, ha='center', va='bottom', fontsize=10)
@@ -74,7 +107,9 @@ ax_win.set_xticklabels(label_names, rotation=45, ha="right")
 
 # ax_win.grid()
 # ax_score.grid()
-ax_win.set_title("Predicted probability of being in first\nplace at tournament end (percentage)")
+ax_win.set_title(
+    "Predicted probability of being in first\nplace at tournament end (percentage)"
+)
 ax_score.set_title("Predicted total score at\ntournament end (average)")
 
 plt.show()

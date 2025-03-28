@@ -67,8 +67,9 @@ for file in raw_path.glob("*.txt"):
             print(index, pick, get_team(pick))
             continue
         else:
-            user_picks_bracket.advance_winner(user_picks_bracket.games[index], team.index)
-
+            user_picks_bracket.advance_winner(
+                user_picks_bracket.games[index], team.index
+            )
 
     entry = BracketEntry(
         bracket=user_picks_bracket,

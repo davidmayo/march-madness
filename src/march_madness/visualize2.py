@@ -49,21 +49,25 @@ class BracketViz(pydantic.BaseModel):
             team_1_bounding_box_y_bottom = game_location.team_1_point[1] + y_bottom
             team_1_bounding_box_y_top = game_location.team_1_point[1] + y_top
             if (
-                team_1_bounding_box_x_left <= point[0] <= team_1_bounding_box_x_right and
-                team_1_bounding_box_y_bottom <= point[1] <= team_1_bounding_box_y_top
+                team_1_bounding_box_x_left <= point[0] <= team_1_bounding_box_x_right
+                and team_1_bounding_box_y_bottom
+                <= point[1]
+                <= team_1_bounding_box_y_top
             ):
                 return game_id, 1
-            
+
             team_2_bounding_box_x_left = game_location.team_2_point[0] + x_left
             team_2_bounding_box_x_right = game_location.team_2_point[0] + x_right
             team_2_bounding_box_y_bottom = game_location.team_2_point[1] + y_bottom
             team_2_bounding_box_y_top = game_location.team_2_point[1] + y_top
             if (
-                team_2_bounding_box_x_left <= point[0] <= team_2_bounding_box_x_right and
-                team_2_bounding_box_y_bottom <= point[1] <= team_2_bounding_box_y_top
+                team_2_bounding_box_x_left <= point[0] <= team_2_bounding_box_x_right
+                and team_2_bounding_box_y_bottom
+                <= point[1]
+                <= team_2_bounding_box_y_top
             ):
                 return game_id, 2
-        
+
         return None
 
 
@@ -130,6 +134,6 @@ if __name__ == "__main__":
     team_1_points = np.array(team_1_points)
     team_2_points = np.array(team_2_points)
 
-    ax.scatter(*team_1_points.T, marker='.', color="blue", alpha=0.03)
-    ax.scatter(*team_2_points.T, marker='.', color="red", alpha=0.03)
+    ax.scatter(*team_1_points.T, marker=".", color="blue", alpha=0.03)
+    ax.scatter(*team_2_points.T, marker=".", color="red", alpha=0.03)
     plt.show()

@@ -14,7 +14,7 @@ class Team(pydantic.BaseModel):
     @property
     def kenpom_id(self) -> str:
         return self.kenpom_name or self.name
-    
+
     @property
     def espn_id(self) -> str:
         return self.espn_name or self.name
