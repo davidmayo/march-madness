@@ -13,12 +13,14 @@ class Simulation:
         sim_game_function: Callable[[Game, Bracket], int] = elo_style,
         sim_count: int = 100,
         callback: Callable[[Bracket], None] | None = None,
+        suppress_print: bool = False,
     ):
         self.bracket = bracket
         self.sim_game_function = sim_game_function
         self.sim_count = sim_count
         self._results: dict[int, Counter[int, int]] = {}
         self.callback = callback
+        self._suppress_print = suppress_print
         self._do_sim()
 
     def results(self, game_id: int) -> list[tuple[str, float]]:
@@ -56,7 +58,8 @@ class Simulation:
 
         for index in range(self.sim_count):
             if index % 100 == 0 or index == self.sim_count - 1:
-                print(f"Simulating bracket {index + 1:,} of {self.sim_count:,}:")
+                if not self._suppress_print:
+                    print(f"Simulating bracket {index + 1:,} of {self.sim_count:,}:")
             simmed_bracket = sim(
                 bracket=self.bracket, sim_game_function=self.sim_game_function
             )
