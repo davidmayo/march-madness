@@ -97,6 +97,17 @@ if __name__ == "__main__":
     bracket.advance_winner(game=bracket.games[46], winner_index=bracket.games[46].team2_index)
     bracket.advance_winner(game=bracket.games[47], winner_index=bracket.games[47].team2_index)
 
+    # ROUND OF 16
+    # bracket.advance_winner(game=bracket.games[48 + 0], winner_index=bracket.games[48 + 0].team1_index) # AUB/MICH
+    # bracket.advance_winner(game=bracket.games[48 + 1], winner_index=bracket.games[48 + 1].team1_index) # OLE MISS/MICH ST
+    bracket.advance_winner(game=bracket.games[48 + 2], winner_index=bracket.games[48 + 2].team1_index) # FLA
+    bracket.advance_winner(game=bracket.games[48 + 3], winner_index=bracket.games[48 + 3].team1_index) # TTECH
+    bracket.advance_winner(game=bracket.games[48 + 4], winner_index=bracket.games[48 + 4].team1_index) # Duke
+    bracket.advance_winner(game=bracket.games[48 + 5], winner_index=bracket.games[48 + 5].team2_index) # Bama
+    # bracket.advance_winner(game=bracket.games[48 + 6], winner_index=bracket.games[48 + 6].team1_index) # HOU/PUR
+    # bracket.advance_winner(game=bracket.games[48 + 7], winner_index=bracket.games[48 + 7].team1_index) # UK/UT
+
+
 
 
 
