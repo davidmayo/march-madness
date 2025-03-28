@@ -249,9 +249,9 @@ if __name__ == "__main__":
             user_name = user.split("_")[0].capitalize()
             table.add_row(
                 user_name, 
-                f"{hypo1:>5.2f}%", 
-                f"{hypo2:>5.2f}%", 
-                f"{diff:>5.2f}%"
+                f"{hypo1:>6.2f}%", 
+                f"{hypo2:>6.2f}%", 
+                f"{diff:>6.2f}%"
             )
         console.print(table)
         print()
