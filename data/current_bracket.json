@@ -917,14 +917,14 @@
         {
             "team1_index": 0,
             "team2_index": 4,
-            "winner_index": null,
+            "winner_index": 0,
             "game_id": 48,
             "round_of": 16
         },
         {
             "team1_index": 8,
             "team2_index": 14,
-            "winner_index": null,
+            "winner_index": 14,
             "game_id": 49,
             "round_of": 16
         },
@@ -959,20 +959,20 @@
         {
             "team1_index": 48,
             "team2_index": 54,
-            "winner_index": null,
+            "winner_index": 48,
             "game_id": 54,
             "round_of": 16
         },
         {
             "team1_index": 58,
             "team2_index": 62,
-            "winner_index": null,
+            "winner_index": 62,
             "game_id": 55,
             "round_of": 16
         },
         {
-            "team1_index": null,
-            "team2_index": null,
+            "team1_index": 0,
+            "team2_index": 14,
             "winner_index": null,
             "game_id": 56,
             "round_of": 8
@@ -992,8 +992,8 @@
             "round_of": 8
         },
         {
-            "team1_index": null,
-            "team2_index": null,
+            "team1_index": 48,
+            "team2_index": 62,
             "winner_index": null,
             "game_id": 59,
             "round_of": 8
