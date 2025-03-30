@@ -154,7 +154,7 @@ if __name__ == "__main__":
     group = Group.load()
     pprint(group)
 
-    title = "07_round_8_game1_florida"
+    title = "09_round_8_game3_houston"
     import json
 
     sim_result_json_path = Path(f"data/sim_results/{title}.json")
@@ -166,7 +166,7 @@ if __name__ == "__main__":
         print(f"\nAVERAGE SCORES:")
         pprint(
             sorted(
-                sim_group.user_average_scores.items(), key=lambda x: x[1], reverse=True
+                sim_group.user_average_scores.items(), key=lambda x: (x[1], x[2]), reverse=True
             ),
             indent_guides=False,
         )
@@ -246,7 +246,7 @@ if __name__ == "__main__":
                 (user, value[0], value[1], value[1] - value[0])
                 for user, value in results.items()
             ],
-            key=lambda x: x[1],
+            key=lambda x: (x[1], x[2]),
             reverse=True,
         )
         from rich.console import Console
