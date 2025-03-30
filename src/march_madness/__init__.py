@@ -213,8 +213,10 @@ if __name__ == "__main__":
     bracket.advance_winner(game=bracket.games[48 + 7], winner_index=bracket.games[48 + 7].team2_index) # UK/UT
 
     # ROUND OF 8
-    bracket.advance_winner(game=bracket.games[56 + 1], winner_index=bracket.games[56 + 1].team1_index) # FLA/TTECH
-    # bracket.advance_winner(game=bracket.games[56 + 2], winner_index=bracket.games[56 + 2].team1_index) # DUKE/BAMA
+    bracket.advance_winner(game=bracket.games[56 + 1], winner_index=bracket.games[56 + 1].team1_index) # Game 1 - FLA/TTECH
+    # bracket.advance_winner(game=bracket.games[56 + 2], winner_index=bracket.games[56 + 2].team1_index) # Game 2 - DUKE/BAMA
+    # bracket.advance_winner(game=bracket.games[56 + 0], winner_index=bracket.games[56 + 0].team1_index) # Game 3 - AUB/MSU
+    # bracket.advance_winner(game=bracket.games[56 + 3], winner_index=bracket.games[56 + 3].team1_index) # Game 4 - HOU/TENN
 
     CURRENT_BRACKET_PATH.write_text(bracket.model_dump_json(indent=4))
 
