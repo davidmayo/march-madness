@@ -218,6 +218,11 @@ if __name__ == "__main__":
     bracket.advance_winner(game=bracket.games[56 + 3], winner_index=bracket.games[56 + 3].team1_index) # Game 4 - HOU/TENN
     bracket.advance_winner(game=bracket.games[56 + 0], winner_index=bracket.games[56 + 0].team1_index) # Game 3 - AUB/MSU
 
+    # ROUND OF 4
+    bracket.advance_winner(game=bracket.games[60 + 0], winner_index=bracket.games[60 + 0].team2_index) # Game 1 - FLA
+    bracket.advance_winner(game=bracket.games[61 + 0], winner_index=bracket.games[61 + 0].team2_index) # Game 2 - HOU
+
+
     CURRENT_BRACKET_PATH.write_text(bracket.model_dump_json(indent=4))
 
     from march_madness.visualize import plot_bracket

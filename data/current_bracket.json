@@ -1001,20 +1001,20 @@
         {
             "team1_index": 0,
             "team2_index": 16,
-            "winner_index": null,
+            "winner_index": 16,
             "game_id": 60,
             "round_of": 4
         },
         {
             "team1_index": 32,
             "team2_index": 48,
-            "winner_index": null,
+            "winner_index": 48,
             "game_id": 61,
             "round_of": 4
         },
         {
-            "team1_index": null,
-            "team2_index": null,
+            "team1_index": 16,
+            "team2_index": 48,
             "winner_index": null,
             "game_id": 62,
             "round_of": 2

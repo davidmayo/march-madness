@@ -133,6 +133,68 @@ class SimGroup:
         }
 
 
+def enumerate_final_four(
+    bracket: Bracket,
+):
+    assert bracket.current_round_of() == 4
+
+    semifinal_1 = bracket.games[-3]
+    semifinal_2 = bracket.games[-2]
+    final_game = bracket.games[-1]
+
+    results = []
+
+    if semifinal_1.winner_index is  None:
+        semifinal_1_possible_winners = [
+            bracket.teams[semifinal_1.team1_index],
+            bracket.teams[semifinal_1.team2_index],
+        ]
+    else:
+        semifinal_1_possible_winners = [
+            bracket.teams[semifinal_1.winner_index]
+        ]
+    
+    if semifinal_2.winner_index is None:
+        semifinal_2_possible_winners = [
+            bracket.teams[semifinal_2.team1_index],
+            bracket.teams[semifinal_2.team2_index],
+        ]
+    else:
+        semifinal_2_possible_winners = [
+            bracket.teams[semifinal_2.winner_index]
+        ]
+
+
+    for semifinal_1_winner in semifinal_1_possible_winners:
+        sim_bracket = bracket.clone()
+        sim_bracket.advance_winner(semifinal_1, semifinal_1_winner.index)
+        for semifinal_2_winner in semifinal_2_possible_winners:
+            sim_bracket.advance_winner(semifinal_2, semifinal_2_winner.index)
+
+            for final_winner in [semifinal_1_winner, semifinal_2_winner]:
+                sim_bracket.advance_winner(final_game, final_winner.index)
+                group = Group.load()
+                winner = group.score_all(sim_bracket)
+                results.append((bracket.teams[semifinal_1_winner.index], bracket.teams[semifinal_2_winner.index], bracket.teams[final_winner.index], winner))
+                # results.append(sim_bracket)
+    
+    table = Table(title="Final Four Enumeration", box=box.ROUNDED)
+    table.add_column("AUB/FLA winner")
+    table.add_column("DUKE/HOU winner")
+    table.add_column("Champion")
+    table.add_column("Group Winner")
+
+    for semifinal_1_winner, semifinal_2_winner, final_winner, ssc_winner in results:
+        table.add_row(
+            f"{semifinal_1_winner.name}",
+            f"{semifinal_2_winner.name}",
+            f"{final_winner.name}",
+            f"{ssc_winner.bracket_name.split("_")[0].capitalize():<4}" + f" ({ssc_winner.score:,.0f} points)",
+        )
+    console = Console()
+    console.print(table)
+
+
 if __name__ == "__main__":
     # from march_madness.simulation import best_seed_wins, sim
 
@@ -154,7 +216,7 @@ if __name__ == "__main__":
     group = Group.load()
     pprint(group)
 
-    title = "09_round_8_game4_auburn"
+    title = "10_round_4_game2_duke"
     import json
 
     sim_result_json_path = Path(f"data/sim_results/{title}.json")
@@ -274,3 +336,6 @@ if __name__ == "__main__":
         # pprint(results)
 
         # pprint(results_tup)
+
+    # if bracket.current_round_of() == 4:
+    #     enumerate_final_four(current_bracket)
