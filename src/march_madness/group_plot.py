@@ -43,10 +43,28 @@ ax_win: plt.Axes
 
 for user in user_names:
     first_name = user.split("_")[0].capitalize()
-    ax_score.plot(score_data[user], label=user, marker="o")
+    ax_score.plot(score_data[user], label=user, marker="o", color="#000000", alpha=0.1)
+
     ax_win.plot(win_percent_data[user], label=user, marker="o")
 
-    color = ax_score.get_lines()[-1].get_color()
+    # color = ax_score.get_lines()[-1].get_color()
+    color = ax_win.get_lines()[-1].get_color()
+    ax_score.plot(
+        [0, len(score_data[user]) - 1],
+        [score_data[user][0], score_data[user][-1]],
+        linestyle="--",
+        color=color,
+        alpha=1.0,
+        linewidth=2.5,  # Increased line thickness
+    )
+    ax_score.scatter(
+        [0, len(score_data[user]) - 1],
+        [score_data[user][0], score_data[user][-1]],
+        color=color,
+        marker="o",
+        # s=100,  # Increased marker size
+    )
+
     ax_score.text(
         0,
         score_data[user][0],

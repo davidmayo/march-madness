@@ -69,6 +69,8 @@ class Bracket(pydantic.BaseModel):
         return [game for game in self.games if game.winner_index is None]
 
     def current_round_of(self) -> int:
+        if not self.undecided_games():
+            return 1
         return max([game.round_of for game in self.undecided_games()])
 
     def current_round_games(self) -> list[Game]:

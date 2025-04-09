@@ -1015,7 +1015,7 @@
         {
             "team1_index": 16,
             "team2_index": 48,
-            "winner_index": null,
+            "winner_index": 16,
             "game_id": 62,
             "round_of": 2
         }

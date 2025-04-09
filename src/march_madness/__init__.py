@@ -222,6 +222,10 @@ if __name__ == "__main__":
     bracket.advance_winner(game=bracket.games[60 + 0], winner_index=bracket.games[60 + 0].team2_index) # Game 1 - FLA
     bracket.advance_winner(game=bracket.games[61 + 0], winner_index=bracket.games[61 + 0].team2_index) # Game 2 - HOU
 
+    # ROUND OF 2
+    bracket.advance_winner(game=bracket.games[62 + 0], winner_index=bracket.games[62 + 0].team1_index) # Game 1 - FLA
+
+
 
     CURRENT_BRACKET_PATH.write_text(bracket.model_dump_json(indent=4))
 

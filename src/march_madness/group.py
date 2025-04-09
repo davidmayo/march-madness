@@ -216,7 +216,7 @@ if __name__ == "__main__":
     group = Group.load()
     pprint(group)
 
-    title = "10_round_4_game2_duke"
+    title = "11_round_2_florida"
     import json
 
     sim_result_json_path = Path(f"data/sim_results/{title}.json")
